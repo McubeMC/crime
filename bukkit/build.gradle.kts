@@ -7,17 +7,17 @@ plugins {
 bukkit {
   name = rootProject.name
   main = "xyz.jonesdev.sonar.bukkit.SonarBukkitPlugin"
-  authors = listOf("Jones Development", "Sonar Contributors")
-  website = "https://sonar.top/discord/"
+  authors = listOf("Jones Development", "Sonar Contributors", "McubeMC & FrameMC developers")
+  website = "https://mcubemc.fr"
   load = BukkitPluginDescription.PluginLoadOrder.POSTWORLD
   softDepend = listOf("Geyser-Spigot", "floodgate", "Protocolize", "ProtocolSupport",
     "ViaVersion", "packetevents", "ProtocolLib", "FastLogin")
-  apiVersion = "1.13" // ignore legacy plugin warning
+  apiVersion = "1.13" 
   foliaSupported = true
 
   commands {
     register("sonar") {
-      // No permission checks here
+
     }
   }
 }
